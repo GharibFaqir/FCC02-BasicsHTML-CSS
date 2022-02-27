@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1>Hello World</h1>
+	<h2>CatPhotoApp</h2>
+</head>
+
+<body>
+	<main>
+
+<!--Add Image-->
+
+<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Relaxing Orange Baby Cat">
+
+<!--External Anchor-->
+
+<a href="https://www.freecatphotoapp.com" target="_blank">Cat Photos</a>
+
+<!--Internal Anchor-->
+
+<a href="#footer">Jump to Bottom</a>
+
+<p>
+	Kitty ipsum dolor sit amet,
+	shed everywhere shed everywhere,
+	stretching attack your ankles,
+	chase the red dot,
+	hairball run catnip eat the grass sniff.
+</p>
+
+<!--Convert Image into link-->
+
+<a href="#">
+	<img src="https://s3.amazonaws.com/freecodecamp/running-cats.jpg" alt="Image link">
+</a>
+
+<!--Nested Anchor-->
+
+<p>View more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a></p>
+
+<!--Dead-links-->
+
+<p>Dead links using <a href="#" target="_blank">#</a> symbol.</p>
+
+<p>
+	Purr jump eat the grass,
+	rip the couch scratched sunbathe,
+	shed everywhere rip the couch,
+	sleep in the sink,
+	fluffy fur catnip scratched.
+</p>
+
+<!--Bullet List-->
+
+<!--HTML Divisions div (most used)-->
+
+<div>
+
+<p>Cat like:</p>
+
+<ul>
+	<li>Milk</li>
+	<li>Fish</li>
+	<li>Ball</li>
+</ul>
+
+<!--Ordered List-->
+
+<p>Cat no like:</p>
+
+<ol>
+	<li>Dogs</li>
+	<li>Cheese</li>
+	<li>Lemon</li>
+</ol>
+
+</div>
+
+<!--Form || Input || Button/Radio-->
+
+<form action="https://www.freecatphotoapp.com/submit-cat-photo">
+
+<!--Input must required-->
+
+	<input type="text" required placeholder="cat photo URL">
+	
+<!--Input Radio Button-->
+
+<label for="indoor">
+		<input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked>
+Indoor</label>
+
+<label for="outdoor">
+		<input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">
+Outdoor</label>
+
+<!--Input Checkbox-->
+
+<!--Value attribute pings server with data otherwise Null-->
+
+<label for="lazy">
+	<input id="lazy" value="lazy" type="checkbox" name="personality" checked>
+Lazy</label>
+
+<label for="loving">
+	<input id="loving" value="loving" type="checkbox" name="personality">
+Loving</label>
+
+<label for="energetic">
+	<input id="energetic" value="energetic" type="checkbox" name="personality">
+Energetic</label>
+
+<!--Button-->
+	
+	<button type="submit">Submit</button>
+
+</form>
+
+	</main>
+</body>
+
+<footer id="footer">Copyright Cat Photos App</footer>
+
+</html>
