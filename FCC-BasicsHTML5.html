@@ -1,124 +1,153 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<h1>Hello World</h1>
-	<h2>CatPhotoApp</h2>
-</head>
+  <head>
+    <h1>Hello World</h1>
+    <h2>CatPhotoApp</h2>
+  </head>
 
-<body>
-	<main>
+  <body>
+    <main>
+      <!--Add Image-->
+      <img
+        src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+        alt="Relaxing Orange Baby Cat"
+      />
 
-<!--Add Image-->
+      <!--External Anchor-->
 
-<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Relaxing Orange Baby Cat">
+      <a href="https://www.freecatphotoapp.com" target="_blank">Cat Photos</a>
 
-<!--External Anchor-->
+      <!--Internal Anchor-->
 
-<a href="https://www.freecatphotoapp.com" target="_blank">Cat Photos</a>
+      <a href="#footer">Jump to Bottom</a>
 
-<!--Internal Anchor-->
+      <p>
+        Kitty ipsum dolor sit amet, shed everywhere shed everywhere, stretching
+        attack your ankles, chase the red dot, hairball run catnip eat the grass
+        sniff.
+      </p>
 
-<a href="#footer">Jump to Bottom</a>
+      <!--Convert Image into link-->
 
-<p>
-	Kitty ipsum dolor sit amet,
-	shed everywhere shed everywhere,
-	stretching attack your ankles,
-	chase the red dot,
-	hairball run catnip eat the grass sniff.
-</p>
+      <a href="#">
+        <img
+          src="https://s3.amazonaws.com/freecodecamp/running-cats.jpg"
+          alt="Image link"
+        />
+      </a>
 
-<!--Convert Image into link-->
+      <!--Nested Anchor-->
 
-<a href="#">
-	<img src="https://s3.amazonaws.com/freecodecamp/running-cats.jpg" alt="Image link">
-</a>
+      <p>
+        View more
+        <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>
+      </p>
 
-<!--Nested Anchor-->
+      <!--Dead-links-->
 
-<p>View more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a></p>
+      <p>Dead links using <a href="#" target="_blank">#</a> symbol.</p>
 
-<!--Dead-links-->
+      <p>
+        Purr jump eat the grass, rip the couch scratched sunbathe, shed
+        everywhere rip the couch, sleep in the sink, fluffy fur catnip
+        scratched.
+      </p>
 
-<p>Dead links using <a href="#" target="_blank">#</a> symbol.</p>
+      <!--Bullet List-->
 
-<p>
-	Purr jump eat the grass,
-	rip the couch scratched sunbathe,
-	shed everywhere rip the couch,
-	sleep in the sink,
-	fluffy fur catnip scratched.
-</p>
+      <!--HTML Divisions div (most used)-->
 
-<!--Bullet List-->
+      <div>
+        <p>Cat like:</p>
 
-<!--HTML Divisions div (most used)-->
+        <ul>
+          <li>Milk</li>
+          <li>Fish</li>
+          <li>Ball</li>
+        </ul>
 
-<div>
+        <!--Ordered List-->
 
-<p>Cat like:</p>
+        <p>Cat no like:</p>
 
-<ul>
-	<li>Milk</li>
-	<li>Fish</li>
-	<li>Ball</li>
-</ul>
+        <ol>
+          <li>Dogs</li>
+          <li>Cheese</li>
+          <li>Lemon</li>
+        </ol>
+      </div>
 
-<!--Ordered List-->
+      <!--Form || Input || Button/Radio-->
 
-<p>Cat no like:</p>
+      <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+        <!--Input must required-->
 
-<ol>
-	<li>Dogs</li>
-	<li>Cheese</li>
-	<li>Lemon</li>
-</ol>
+        <input type="text" required placeholder="cat photo URL" />
 
-</div>
+        <!--Input Radio Button-->
 
-<!--Form || Input || Button/Radio-->
+        <label for="indoor">
+          <input
+            id="indoor"
+            value="indoor"
+            type="radio"
+            name="indoor-outdoor"
+            checked
+          />
+          Indoor</label
+        >
 
-<form action="https://www.freecatphotoapp.com/submit-cat-photo">
+        <label for="outdoor">
+          <input
+            id="outdoor"
+            value="outdoor"
+            type="radio"
+            name="indoor-outdoor"
+          />
+          Outdoor</label
+        >
 
-<!--Input must required-->
+        <!--Input Checkbox-->
 
-	<input type="text" required placeholder="cat photo URL">
-	
-<!--Input Radio Button-->
+        <!--Value attribute pings server with data otherwise Null-->
 
-<label for="indoor">
-		<input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked>
-Indoor</label>
+        <label for="lazy">
+          <input
+            id="lazy"
+            value="lazy"
+            type="checkbox"
+            name="personality"
+            checked
+          />
+          Lazy</label
+        >
 
-<label for="outdoor">
-		<input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">
-Outdoor</label>
+        <label for="loving">
+          <input
+            id="loving"
+            value="loving"
+            type="checkbox"
+            name="personality"
+          />
+          Loving</label
+        >
 
-<!--Input Checkbox-->
+        <label for="energetic">
+          <input
+            id="energetic"
+            value="energetic"
+            type="checkbox"
+            name="personality"
+          />
+          Energetic</label
+        >
 
-<!--Value attribute pings server with data otherwise Null-->
+        <!--Button-->
 
-<label for="lazy">
-	<input id="lazy" value="lazy" type="checkbox" name="personality" checked>
-Lazy</label>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
 
-<label for="loving">
-	<input id="loving" value="loving" type="checkbox" name="personality">
-Loving</label>
-
-<label for="energetic">
-	<input id="energetic" value="energetic" type="checkbox" name="personality">
-Energetic</label>
-
-<!--Button-->
-	
-	<button type="submit">Submit</button>
-
-</form>
-
-	</main>
-</body>
-
-<footer id="footer">Copyright Cat Photos App</footer>
-
+  <footer id="footer">Copyright Cat Photos App</footer>
 </html>
