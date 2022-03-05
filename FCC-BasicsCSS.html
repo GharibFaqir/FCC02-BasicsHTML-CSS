@@ -1,52 +1,56 @@
-<!--05. Import Google Font-->
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<!--Import Google Font-->
+<link
+  href="https://fonts.googleapis.com/css?family=Lobster"
+  rel="stylesheet"
+  type="text/css"
+/>
 
-<!--01. Color-->
-<h1 style="color: red;">CatphotoApp</h1>
+<!--Color-->
+<h1 style="color: rebeccapurple">CatphotoApp</h1>
 
-<!--02. Style Block-->
-<!--03. CSS Class-->
-<!--04. Font Size/Type-->
+<!--Style Block-->
+<!--CSS Class-->
+<!--Font Size/Type-->
 
-<!--07. HTML Element border-->
+<!--HTML Element border-->
 <style>
-	h2 {
-	color: blue;
-	}
-	
-	.h3 {
-	color: green;
-	font-size: 30px;
-	font-family: monospace;
-	}
+  h2 {
+    color: brown;
+  }
 
-	.p {
-	color: orange;
-	font-size: 30px;
-	font-family: Lobster, monospace;
-	}
+  .h3 {
+    color: greenyellow;
+    font-size: 30px;
+    font-family: monospace;
+  }
 
-	.img-size {
-		width: 250px;
-	}
+  .p {
+    color: violet;
+    font-size: 30px;
+    font-family: Lobster, monospace;
+  }
 
-	.img-border {
-		border-color: cornflowerblue;
-		border-width: 10px;
-		border-style: solid;
-		border-radius: 10px;
-	}
+  .img-size {
+    width: 250px;
+  }
 
-	.img-border-2 {
-		border-color: blueviolet;
-		border-width: 10px;
-		border-style: solid;
-		border-radius: 50%;
-	}
+  .img-border {
+    border-color: cornflowerblue;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;
+  }
 
-	.div-background {
-		background-color: slateblue;
-	}
+  .img-border-2 {
+    border-color: blueviolet;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .div-background {
+    background-color: slateblue;
+  }
 </style>
 
 <h2>c/o FreeCodeCamp</h2>
@@ -54,32 +58,50 @@
 <h3 class="h3">Date: 22-Feb-2022</h3>
 <p class="p">Row, row, row your boat, gently down the stream</p>
 
-<!--06. Image Resize-->
-<!--07. Image Border-->
-<!--08. Round Corner-->
+<!--Image Resize-->
+<!--Image Border-->
+<!--Round Corner-->
 
 <a>
-	<img class="img-size img-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Cute Orange Cat Baby!!">
+  <img
+    class="img-size img-border"
+    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+    alt="Cute Orange Cat Baby!!"
+  />
 </a>
 
-<!--10. Background-->
+<!--Background-->
 <div class="div-background">
-	<p>Things Cat love:</p>
-	<ul>
-		<li>Milk</li>
-		<li>Fish</li>
-		<li>Fur</li>
-	</ul>
+  <p>Things Cat love:</p>
+  <ul>
+    <li>Milk</li>
+    <li>Fish</li>
+    <li>Fur</li>
+  </ul>
 
-	<p>Things cat no like:</p>
-	<ol>
-		<li>Water</li>
-		<li>Dog</li>
-		<li>Music</li>
-	</ol>
+  <p>Things cat no like:</p>
+  <ol>
+    <li>Water</li>
+    <li>Dog</li>
+    <li>Music</li>
+  </ol>
 </div>
 
-<!--09. Border II-->
+<!--Border II-->
 <a>
-	<img class="img-border-2" src="https://s3.amazonaws.com/freecodecamp/running-cats.jpg" alt="3 little kittens running on green grass">
+  <img
+    class="img-border-2"
+    src="https://s3.amazonaws.com/freecodecamp/running-cats.jpg"
+    alt="3 little kittens running on green grass"
+  />
 </a>
+
+<form id="cat-photo-form">
+	<label><input type="radio" name="Indoor-Outdoor" checked>Indoor</label>
+	<label><input type="radio" name="Indoor-Outdoor"></label>
+	<!--Break-->
+	<br>
+	<label><input type="checkbox" name="Attribute" checked>Loving</label>
+	<label><input type="checkbox" name="Attribute">Lazy</label>
+	<label><input type="checkbox" name="Attribute">Energetic</label>
+</form>
