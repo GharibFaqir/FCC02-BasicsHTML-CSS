@@ -56,6 +56,36 @@
   .div-background {
     background-color: slateblue;
   }
+
+  .red-box {
+    background-color: tomato;
+    padding: 10px;
+  }
+
+  .blue-box {
+    background-color: skyblue;
+    color: black;
+    padding: 10px;
+  }
+
+  .yellow-box {
+    background-color: yellowgreen;
+    color: black;
+    padding: 10px;
+  }
+
+  .padding-border {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+    color: black;
+  }
 </style>
 
 <h2>c/o FreeCodeCamp</h2>
@@ -102,21 +132,24 @@
 </a>
 
 <form id="cat-photo-form">
-	<label><input type="radio" name="Indoor-Outdoor" checked>Indoor</label>
-	<label><input type="radio" name="Indoor-Outdoor"></label>
-	<!--Break-->
-	<br>
-	<label><input type="checkbox" name="Attribute" checked>Loving</label>
-	<label><input type="checkbox" name="Attribute">Lazy</label>
-	<label><input type="checkbox" name="Attribute">Energetic</label>
+  <label><input type="radio" name="Indoor-Outdoor" checked />Indoor</label>
+  <label><input type="radio" name="Indoor-Outdoor" /></label>
   <!--Break-->
-  <br>
-	<input type="text" placeholder="cat photos URL">
+  <br />
+  <label><input type="checkbox" name="Attribute" checked />Loving</label>
+  <label><input type="checkbox" name="Attribute" />Lazy</label>
+  <label><input type="checkbox" name="Attribute" />Energetic</label>
+  <!--Break-->
+  <br />
+  <input type="text" placeholder="cat photos URL" />
   <button type="submit">Submit</button>
 </form>
 
 <!--Nested Divisions{div} Regions-->
 
-<br>
-
-
+<br />
+<h5 class="injected-text">Margin</h5>
+<div class="yellow-box padding-border">
+  <h5 class="red-box padding-border">Red-Padding</h5>
+  <h5 class="blue-box padding-border">Blue-Padding</h5>
+</div>
