@@ -22,8 +22,12 @@
     color: pink;
   }
 
-  .CSS-Variable {
+  :root {
     --x-color: orange;
+  }
+
+  .CSS-Variable {
+    color: var(--x-color, orange);
   }
 
   #cat-photo-form {
